@@ -287,7 +287,7 @@ void loop()
           }
           status_string = "scroll_detect";
         }
-        if (abs(scroll_clicks) >= 1 && (scrolling_vert || scrolling_hori))
+        if (abs(scroll_clicks) >= 1 && (scrolling_vert || scrolling_hori) && !scrolling_detect)
         {
           if (scrolling_vert)
           {
